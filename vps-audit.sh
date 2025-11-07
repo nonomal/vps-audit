@@ -220,7 +220,7 @@ if command -v docker >/dev/null 2>&1; then
             docker ps | grep -q "fail2ban" && IPS_ACTIVE=1
         fi
     else
-        check_security "Intrusion Prevention" "WARN" "Docker is instaleld but not running - cannot check for Fail2ban containers"
+        check_security "Intrusion Prevention" "WARN" "Docker is installed but not running - cannot check for Fail2ban containers"
     fi
 fi
 
@@ -237,7 +237,7 @@ if command -v docker >/dev/null 2>&1; then
             docker ps | grep -q "crowdsec" && IPS_ACTIVE=1
         fi
     else
-        check_security "Intrusion Prevention" "WARN" "Docker is instaleld but not running - cannot check for CrowdSec containers"
+        check_security "Intrusion Prevention" "WARN" "Docker is installed but not running - cannot check for CrowdSec containers"
     fi
 fi
 
